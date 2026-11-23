@@ -9,91 +9,26 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as RoomsRouteImport } from './routes/rooms'
-import { Route as ReviewsRouteImport } from './routes/reviews'
-import { Route as RestaurantRouteImport } from './routes/restaurant'
-import { Route as NearbyAttractionsRouteImport } from './routes/nearby-attractions'
-import { Route as KandaghatRouteImport } from './routes/kandaghat'
-import { Route as HotelNearShimlaRouteImport } from './routes/hotel-near-shimla'
-import { Route as HotelNearSadhupulRouteImport } from './routes/hotel-near-sadhupul'
-import { Route as HotelInSolanRouteImport } from './routes/hotel-in-solan'
-import { Route as HotelInKandaghatRouteImport } from './routes/hotel-in-kandaghat'
-import { Route as HotelInChailRouteImport } from './routes/hotel-in-chail'
-import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as BestHotelInKandaghatRouteImport } from './routes/best-hotel-in-kandaghat'
-import { Route as AttractionsRouteImport } from './routes/attractions'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AttractionsRouteImport } from './routes/attractions'
+import { Route as BestHotelInKandaghatRouteImport } from './routes/best-hotel-in-kandaghat'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as HotelInChailRouteImport } from './routes/hotel-in-chail'
+import { Route as HotelInKandaghatRouteImport } from './routes/hotel-in-kandaghat'
+import { Route as HotelInSolanRouteImport } from './routes/hotel-in-solan'
+import { Route as HotelNearSadhupulRouteImport } from './routes/hotel-near-sadhupul'
+import { Route as HotelNearShimlaRouteImport } from './routes/hotel-near-shimla'
+import { Route as KandaghatRouteImport } from './routes/kandaghat'
+import { Route as NearbyAttractionsRouteImport } from './routes/nearby-attractions'
+import { Route as RestaurantRouteImport } from './routes/restaurant'
+import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as RoomsRouteImport } from './routes/rooms'
 
-const RoomsRoute = RoomsRouteImport.update({
-  id: '/rooms',
-  path: '/rooms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ReviewsRoute = ReviewsRouteImport.update({
-  id: '/reviews',
-  path: '/reviews',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RestaurantRoute = RestaurantRouteImport.update({
-  id: '/restaurant',
-  path: '/restaurant',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NearbyAttractionsRoute = NearbyAttractionsRouteImport.update({
-  id: '/nearby-attractions',
-  path: '/nearby-attractions',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const KandaghatRoute = KandaghatRouteImport.update({
-  id: '/kandaghat',
-  path: '/kandaghat',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HotelNearShimlaRoute = HotelNearShimlaRouteImport.update({
-  id: '/hotel-near-shimla',
-  path: '/hotel-near-shimla',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HotelNearSadhupulRoute = HotelNearSadhupulRouteImport.update({
-  id: '/hotel-near-sadhupul',
-  path: '/hotel-near-sadhupul',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HotelInSolanRoute = HotelInSolanRouteImport.update({
-  id: '/hotel-in-solan',
-  path: '/hotel-in-solan',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HotelInKandaghatRoute = HotelInKandaghatRouteImport.update({
-  id: '/hotel-in-kandaghat',
-  path: '/hotel-in-kandaghat',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HotelInChailRoute = HotelInChailRouteImport.update({
-  id: '/hotel-in-chail',
-  path: '/hotel-in-chail',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GalleryRoute = GalleryRouteImport.update({
-  id: '/gallery',
-  path: '/gallery',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BestHotelInKandaghatRoute = BestHotelInKandaghatRouteImport.update({
-  id: '/best-hotel-in-kandaghat',
-  path: '/best-hotel-in-kandaghat',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AttractionsRoute = AttractionsRouteImport.update({
-  id: '/attractions',
-  path: '/attractions',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -101,9 +36,74 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AttractionsRoute = AttractionsRouteImport.update({
+  id: '/attractions',
+  path: '/attractions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BestHotelInKandaghatRoute = BestHotelInKandaghatRouteImport.update({
+  id: '/best-hotel-in-kandaghat',
+  path: '/best-hotel-in-kandaghat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelInChailRoute = HotelInChailRouteImport.update({
+  id: '/hotel-in-chail',
+  path: '/hotel-in-chail',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelInKandaghatRoute = HotelInKandaghatRouteImport.update({
+  id: '/hotel-in-kandaghat',
+  path: '/hotel-in-kandaghat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelInSolanRoute = HotelInSolanRouteImport.update({
+  id: '/hotel-in-solan',
+  path: '/hotel-in-solan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelNearSadhupulRoute = HotelNearSadhupulRouteImport.update({
+  id: '/hotel-near-sadhupul',
+  path: '/hotel-near-sadhupul',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelNearShimlaRoute = HotelNearShimlaRouteImport.update({
+  id: '/hotel-near-shimla',
+  path: '/hotel-near-shimla',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KandaghatRoute = KandaghatRouteImport.update({
+  id: '/kandaghat',
+  path: '/kandaghat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NearbyAttractionsRoute = NearbyAttractionsRouteImport.update({
+  id: '/nearby-attractions',
+  path: '/nearby-attractions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RestaurantRoute = RestaurantRouteImport.update({
+  id: '/restaurant',
+  path: '/restaurant',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReviewsRoute = ReviewsRouteImport.update({
+  id: '/reviews',
+  path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoomsRoute = RoomsRouteImport.update({
+  id: '/rooms',
+  path: '/rooms',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -240,102 +240,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/rooms': {
-      id: '/rooms'
-      path: '/rooms'
-      fullPath: '/rooms'
-      preLoaderRoute: typeof RoomsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/reviews': {
-      id: '/reviews'
-      path: '/reviews'
-      fullPath: '/reviews'
-      preLoaderRoute: typeof ReviewsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/restaurant': {
-      id: '/restaurant'
-      path: '/restaurant'
-      fullPath: '/restaurant'
-      preLoaderRoute: typeof RestaurantRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/nearby-attractions': {
-      id: '/nearby-attractions'
-      path: '/nearby-attractions'
-      fullPath: '/nearby-attractions'
-      preLoaderRoute: typeof NearbyAttractionsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/kandaghat': {
-      id: '/kandaghat'
-      path: '/kandaghat'
-      fullPath: '/kandaghat'
-      preLoaderRoute: typeof KandaghatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hotel-near-shimla': {
-      id: '/hotel-near-shimla'
-      path: '/hotel-near-shimla'
-      fullPath: '/hotel-near-shimla'
-      preLoaderRoute: typeof HotelNearShimlaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hotel-near-sadhupul': {
-      id: '/hotel-near-sadhupul'
-      path: '/hotel-near-sadhupul'
-      fullPath: '/hotel-near-sadhupul'
-      preLoaderRoute: typeof HotelNearSadhupulRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hotel-in-solan': {
-      id: '/hotel-in-solan'
-      path: '/hotel-in-solan'
-      fullPath: '/hotel-in-solan'
-      preLoaderRoute: typeof HotelInSolanRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hotel-in-kandaghat': {
-      id: '/hotel-in-kandaghat'
-      path: '/hotel-in-kandaghat'
-      fullPath: '/hotel-in-kandaghat'
-      preLoaderRoute: typeof HotelInKandaghatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hotel-in-chail': {
-      id: '/hotel-in-chail'
-      path: '/hotel-in-chail'
-      fullPath: '/hotel-in-chail'
-      preLoaderRoute: typeof HotelInChailRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gallery': {
-      id: '/gallery'
-      path: '/gallery'
-      fullPath: '/gallery'
-      preLoaderRoute: typeof GalleryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/best-hotel-in-kandaghat': {
-      id: '/best-hotel-in-kandaghat'
-      path: '/best-hotel-in-kandaghat'
-      fullPath: '/best-hotel-in-kandaghat'
-      preLoaderRoute: typeof BestHotelInKandaghatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/attractions': {
-      id: '/attractions'
-      path: '/attractions'
-      fullPath: '/attractions'
-      preLoaderRoute: typeof AttractionsRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -345,11 +254,102 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/attractions': {
+      id: '/attractions'
+      path: '/attractions'
+      fullPath: '/attractions'
+      preLoaderRoute: typeof AttractionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/best-hotel-in-kandaghat': {
+      id: '/best-hotel-in-kandaghat'
+      path: '/best-hotel-in-kandaghat'
+      fullPath: '/best-hotel-in-kandaghat'
+      preLoaderRoute: typeof BestHotelInKandaghatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotel-in-chail': {
+      id: '/hotel-in-chail'
+      path: '/hotel-in-chail'
+      fullPath: '/hotel-in-chail'
+      preLoaderRoute: typeof HotelInChailRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotel-in-kandaghat': {
+      id: '/hotel-in-kandaghat'
+      path: '/hotel-in-kandaghat'
+      fullPath: '/hotel-in-kandaghat'
+      preLoaderRoute: typeof HotelInKandaghatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotel-in-solan': {
+      id: '/hotel-in-solan'
+      path: '/hotel-in-solan'
+      fullPath: '/hotel-in-solan'
+      preLoaderRoute: typeof HotelInSolanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotel-near-sadhupul': {
+      id: '/hotel-near-sadhupul'
+      path: '/hotel-near-sadhupul'
+      fullPath: '/hotel-near-sadhupul'
+      preLoaderRoute: typeof HotelNearSadhupulRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotel-near-shimla': {
+      id: '/hotel-near-shimla'
+      path: '/hotel-near-shimla'
+      fullPath: '/hotel-near-shimla'
+      preLoaderRoute: typeof HotelNearShimlaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kandaghat': {
+      id: '/kandaghat'
+      path: '/kandaghat'
+      fullPath: '/kandaghat'
+      preLoaderRoute: typeof KandaghatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nearby-attractions': {
+      id: '/nearby-attractions'
+      path: '/nearby-attractions'
+      fullPath: '/nearby-attractions'
+      preLoaderRoute: typeof NearbyAttractionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/restaurant': {
+      id: '/restaurant'
+      path: '/restaurant'
+      fullPath: '/restaurant'
+      preLoaderRoute: typeof RestaurantRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reviews': {
+      id: '/reviews'
+      path: '/reviews'
+      fullPath: '/reviews'
+      preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rooms': {
+      id: '/rooms'
+      path: '/rooms'
+      fullPath: '/rooms'
+      preLoaderRoute: typeof RoomsRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
